@@ -1,0 +1,25 @@
+@import "../index.css";
+
+.column-header {
+  font-weight: bold;
+}
+
+.PersonList {
+  display: grid;
+  grid-template-rows: 1fr;
+  //   row-gap: 28px;
+  & > .PersonListItem {
+    margin: 8px 48px;
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--secondary-color);
+    }
+  }
+}
+
+.PersonListItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
