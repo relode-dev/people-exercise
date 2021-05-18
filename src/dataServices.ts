@@ -35,16 +35,6 @@ export const createPerson = async (person: Person) => {
   return Promise.resolve([...people]);
 };
 
-export const deletePerson = async (id: number) => {
-  await sleep(1500);
-  const index = people.findIndex((p) => p.id === id);
-  if (index < 0) return Promise.reject("user does not exist");
-
-  people.splice(index, 1);
-
-  return Promise.resolve([...people]);
-};
-
 export const retrievePeople = async () => {
   await sleep(1500);
   return Promise.resolve([...people]);
@@ -55,4 +45,14 @@ export const updatePerson = async (person: Person) => {
   const p = people.find((p) => p.id === person.id);
   if (!p) return Promise.reject("user does not exist");
   return Promise.resolve(person);
+};
+
+export const deletePerson = async (id: number) => {
+  await sleep(1500);
+  const index = people.findIndex((p) => p.id === id);
+  if (index < 0) return Promise.reject("user does not exist");
+
+  people.splice(index, 1);
+
+  return Promise.resolve([...people]);
 };
