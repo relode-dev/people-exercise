@@ -1,4 +1,4 @@
-@import "../index.css";
+@import "../index.scss";
 
 .column-header {
   font-weight: bold;
@@ -7,9 +7,9 @@
 .PersonList {
   display: grid;
   grid-template-rows: 1fr;
-  //   row-gap: 28px;
+  border: 1px solid var(--secondary-color);
   & > .PersonListItem {
-    margin: 8px 48px;
+    padding: 18px 48px;
     &:not(:last-child) {
       border-bottom: 1px solid var(--secondary-color);
     }

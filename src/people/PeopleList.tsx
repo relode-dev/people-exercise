@@ -1,11 +1,22 @@
 import * as React from "react";
-import { people } from "../data";
 import styles from "./PeopleList.module.scss";
+import * as services from "../dataServices";
+import { Person } from "../types";
 
 export const PeopleList = () => {
+  const [data, setData] = React.useState<Person[]>([]);
+
+  React.useEffect(() => {
+    const fn = async () => {
+      const people = await services.retrievePeople();
+      setData(people);
+    };
+    fn();
+  }, []);
+
   return (
     <div className={styles.PersonList}>
-      {people.map((p) => (
+      {data.map((p: Person) => (
         <div className={styles.PersonListItem}>
           <span>{p.firstName}</span>
           <span>{p.lastName}</span>

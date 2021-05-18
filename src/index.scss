@@ -1,4 +1,4 @@
-@import "./styles/variables.css";
+@import "./styles/variables.scss";
 
 body {
   margin: 0;
@@ -45,4 +45,8 @@ h4 {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.something {
+  color: var(--);
 }

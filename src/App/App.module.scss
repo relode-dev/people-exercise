@@ -1,7 +1,20 @@
-@import "../index.css";
+@import "../index.scss";
 
 .App {
   & > h1 {
     text-align: center;
+  }
+
+  .footer {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 16px;
+    background-color: var(--primary-color-alt);
+    & > a {
+      color: var(--background);
+    }
   }
 }
