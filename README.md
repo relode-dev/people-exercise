@@ -12,7 +12,7 @@ You will need to fork this repository and do your work there. Once you are compl
 
 ## Guidelines
 
-- We want to keep the dependencies on outside npm packages to a minimum. While we use [Material-UI](https://material-ui.com/) and [Formik](https://formik.org/) internally, there is no expectation that you would use those in this project.
+- We want to keep the dependencies on outside npm packages to a minimum. While we use [Material-UI](https://material-ui.com/) and [Formik](https://formik.org/) internally, there is no expectation that you would use those in this project (but you can).
 - One npm package we use, that you may find useful is [React Router](https://reactrouter.com/) so feel free to bring it into the app.
 - We **do not** use Redux, so we would ask that it not be used in this sample.
 - State management pattern is your option so long as "built-in" react patterns are used.
@@ -27,6 +27,8 @@ You will need to fork this repository and do your work there. Once you are compl
 
 Currently the people app simply shows a list of people with some data fields on each one. As part of this upgrade the user needs to be able to add/remove/edit people. Additionally, we need the ability to capture a note for each person. When adding a new person we need that to be its own screen as there may be a fair amount of marketing or instructional text that will get added later. However, the edit should be inline with the grid. We would prefer that the user explicitly initiate an edit. Deleting a person simply needs a confirmation. When adding a new person the following validations should be checked when the user attempts to submit the new record:
 
-- first and last name are limited to 50 characters
-- email and phone is required
+- first and last name are required and limited to 50 characters
+- email and phone are required
 - note is limited to 500 characters and is optional
+
+Now that people can get added or removed we would like to show the total number of people. The previous developer started this, but could not figure out how to do it. You should see where he left off with this.
