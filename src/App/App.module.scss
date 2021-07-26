@@ -1,20 +1,30 @@
 @import "../index.scss";
 
 .App {
-  & > h1 {
-    text-align: center;
-  }
+    padding:20px 0 0 60px;
 
-  .footer {
-    text-align: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    padding: 16px;
-    background-color: var(--primary-color-alt);
-    & > a {
-      color: var(--background);
+
+    #newPersonButton {
+        font-size: 1rem;
+        padding:.4rem 2rem .4rem 2rem;
+        margin-top:2rem;
     }
-  }
+    
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 16px;
+        background-color: var(--primary-color-alt);
+        & > a {
+            color: var(--background);
+        }
+    }
+
+    .primaryColor {
+        color: var(--primary-color-alt);
+    }
+
 }
+

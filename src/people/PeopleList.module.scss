@@ -1,25 +1,24 @@
 @import "../index.scss";
 
-.column-header {
-  font-weight: bold;
+.PersonList{
+    border-collapse:collapse;
+    td{ padding:4px 20px 4px 4px; }
+    tr:nth-child(2n){ background-color:#eee; }
+    tr:last-child td { padding-top:20px; background-color:#fff; }
+    th {text-align:left; background-color: var(--primary-color-alt); color:#fff; padding:4px 20px 4px 4px;}
 }
 
-.PersonList {
-  display: grid;
-  grid-template-rows: 1fr;
-  border: 1px solid var(--secondary-color);
-  & > .PersonListItem {
-    padding: 18px 48px;
-    &:not(:last-child) {
-      border-bottom: 1px solid var(--secondary-color);
-    }
-  }
+.AccessibleHide {
+    position:absolute;
+    left:-2000px;
 }
 
-.PersonListItem {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 8px;
-  align-items: flex-start;
-  justify-content: flex-start;
+#CreateButton {
+    font-size: 1rem;
+    padding:2px 40px;
+    white-space: nowrap;
+}
+
+.err {
+    background-color:#ffb2b2;
 }
