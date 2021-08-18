@@ -8,7 +8,7 @@ It is our hope that you would be able to complete this in a few hours. If you ru
 
 ## Getting started
 
-You will need to fork this repository and do your work there. Once you have completed the changes you will need to push your changes up to your Github repo (and if able submit it as a PR against our original). Once you've cloned it locally all you need to get started is `npm install` then `npm start`.
+You will need to fork this repository and do your work there. Once you have completed the changes you will need to push your changes up to your Github repo. Once you've cloned it locally all you need to get started is `npm install` then `npm start`.
 
 ## Guidelines
 
